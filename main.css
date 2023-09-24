@@ -1,11 +1,159 @@
-*{
-    margin: 0px;
-    padding: 0px
+/* main.css */
+
+* {
+    text-decoration: none;
 }
 
-.picture{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-image: ('sk1.jpg');
+/* Initial styles for the navigation bar */
+.navbar {
+    background: turquoise; font-family: Arial; padding-right: 10px; padding-left: 10px; overflow: hidden;
 }
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-family: 'broadway', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: mediumaquamarine; margin-left: 10px; border-radius: 5px; padding: 5px; width: 80px;
+}
+button a{
+    color: white; font-weight: bold; font-size: 13px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4vw; /* Use viewport units for font size */
+            font-weight: bolder;
+        }
+
+        /* Add a media query for larger screens */
+        @media (min-width: 768px) {
+            .centered {
+                font-size: 24px; /* Adjust font size for larger screens */
+            }
+        }
+   
+
+        * {
+            box-sizing: border-box;
+          }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 3px;
+          }
+          
+          
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          /* CSS for centering the "Reach Us" section */
+          .reach-us-section {
+            text-align: center;
+            background-color: aliceblue;
+            margin-bottom: 20px;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .reach-us-section h2 {
+            font-size: 30px; 
+            font-weight: bolder;
+            color: #333;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-container {
+            flex: 1;
+            padding: 5px;
+        }
+        
+        .contact-form {
+            flex: 2;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        /* Adjust the styling as needed */
+        
